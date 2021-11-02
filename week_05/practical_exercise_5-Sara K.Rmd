@@ -383,7 +383,6 @@ subject7 <- experiment1 %>%
 par <- c(0.5,1,1,1)
 
 optim <- optim(par = par, fn = RSS, data = subject7, method = 'L-BFGS-B', lower = c(0.5, 0.5, -Inf, -Inf), upper = c(1,1, Inf, Inf))
-
 ```
 Argument for par: 
 i have chosen 0,5 as the lowest value because participant are most likely to have 50% right when answering due to chance on trials. 
